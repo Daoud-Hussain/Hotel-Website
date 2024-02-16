@@ -30,7 +30,10 @@
             <p>Please Fill The Form To Contact Us</p>
         
 
-            <form action="process.php">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="a4c73768-9057-41a2-8157-3bc5f7bf6860">
+                <input type="hidden" name="subject" value= "New form Submission from Hotel Website Form" />
+      
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name">
@@ -45,7 +48,7 @@
                 </div>
             
                 
-                <button class="btn" type="submit">Submit</button>
+                <a href="index.html"><button class="btn" type="submit">Submit</button></a>
             </form>
         </div>
     </section> 
@@ -75,3 +78,15 @@
     </footer>
 </body>
 </html>
+
+<!-- <script>
+    document
+      .getElementById("visitNowButton")
+      .addEventListener("click", function (event) {
+        // Prevent the default action (following the link)
+        event.preventDefault();
+        // Redirect to index.html
+        window.location.href = this.getAttribute("href");
+      });
+  </script>
+   -->
